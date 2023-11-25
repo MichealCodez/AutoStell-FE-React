@@ -1,0 +1,9 @@
+.Hero{
+    height: 100vh;
+    max-height: 800px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px 20px;
+}

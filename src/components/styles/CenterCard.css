@@ -1,0 +1,44 @@
+.center-card {
+    background: #001F3F;
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    text-align: center;
+}
+
+.center-card h2 {
+    color: #F5F5F5;
+    font-family: Montserrat;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-block: 20px;
+}
+
+.center-card p {
+    color: #F5F5F5;
+    text-align: center;
+    font-family: Roboto;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 53px;
+    margin-block: 30px;
+    width: 90%;
+    margin-inline: auto;
+}
+
+.center-card button {
+    color: #A9A9A9;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;
+    border: 3px solid #FFA500;
+    background: #001F3F;
+    padding: 20px 70px;
+    margin-block: 40px;
+}
