@@ -9,7 +9,7 @@ const Header = ({onClickJoin}) => {
             </div>
 
             <div className='header-right'>
-                <a onClick={onClickJoin}>Join Waitlist</a>
+                <a href='/' onClick={onClickJoin}>Join Waitlist</a>
             </div>
         </div>
     )
