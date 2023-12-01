@@ -1,6 +1,6 @@
 .center-card {
     background: #001F3F;
-    width: 80%;
+    width: 70%;
     margin: 40px auto;
     padding: 30px;
     text-align: center;
@@ -40,5 +40,28 @@
     border: 3px solid #FFA500;
     background: #001F3F;
     padding: 20px 70px;
-    margin-block: 40px;
+    margin-block: 50px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .center-card {
+        width: 90%;
+        padding: 1.3rem;
+    }
+
+    .center-card h2 {
+        font-size: 1.6rem;
+    }
+
+    .center-card p{
+        font-size: 1.4rem;
+        line-height: 2rem;
+        width: 100%;
+    }
+
+    .center-card button{
+        font-size: 1.4rem;
+        padding: 1.7rem 3rem;
+    }
 }

@@ -5,12 +5,12 @@ const Header = ({onClickJoin}) => {
     return (
         <div className='header'>
             <div className='header-left'>
-                <a href='/' >Autostell</a>
+                <p href='/' >Autostell</p>
             </div>
-
-            <div className='header-right'>
-                <a href='/' onClick={onClickJoin}>Join Waitlist</a>
-            </div>
+            {/* <div className='header-right'>
+                <p onClick={onClickJoin}>Join Waitlist</p>
+            </div> */}
+            <button onClick={onClickJoin}>Join Waitlist</button>
         </div>
     )
 }

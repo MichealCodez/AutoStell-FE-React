@@ -1,8 +1,9 @@
 import './Card.css';
-import cardImage1 from '../images/card-image-1.png';
 
 
 const CardRight = ({content, onClickJoin}) => {
+    const imageName = content.imageUrl;
+    const imageUrl = require(`../images/${imageName}`)
     return (
         <div className="card-right">
             <div className="col-1">
@@ -11,7 +12,7 @@ const CardRight = ({content, onClickJoin}) => {
                 <button onClick={onClickJoin}>Join Waitlist</button>
             </div>
             <div className="col-2">
-                <img src={cardImage1} alt='' />
+                <img src={imageUrl} alt=''/>
             </div>
         </div>
     )

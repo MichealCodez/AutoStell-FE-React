@@ -1,9 +1,10 @@
 .footer {
     width: 100%;
     display: flex;
+    height: 60px;
     justify-content: space-between;
-    align-items: center;
-    padding: 40px 20px;
+    align-items: flex-end;
+    padding: 10px 20px;
     border: 2px solid #A9A9A9;
     background: #001F3F;
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.25);
@@ -35,6 +36,47 @@
     margin: 40px auto;
 }
 
+.footer-card .back-image{
+    position: relative;
+    width: 100%;
+}
+
 .footer-card img{
     width: 100%;
+}
+
+.footer-card .footer-slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 90%;
+    height: 90%;
+    margin-inline: auto;
+    margin-top: auto;
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .footer{
+        height: fit-content;
+        padding: 1rem 0.4rem 4rem;
+        align-items: flex-start;
+    }
+
+    .footer-card{
+        width: 90%;
+        margin: 40px auto;
+    }
+
+    .footer p {
+        font-size: 1rem;
+    }
+
+    .footer p:nth-child(2) {
+        width: 40%;
+        font-size: 1rem;
+    }   
 }

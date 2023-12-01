@@ -1,6 +1,7 @@
 .bottom-sheet {
     position: fixed;
-    bottom: -450px;
+    top: calc(100% - 50px);
+    bottom: auto;
     left: 0;
     right: 0;
     width: 600px;
@@ -8,9 +9,17 @@
     border: 3px solid #FFA500;
     background: #A9A9A9;
     box-shadow: 0px -10px 15px 0px rgba(0, 31, 63, 0.40), 10px 0px 15px 0px rgba(0, 31, 63, 0.40);
-    transition: bottom 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
 }
 
 .bottom-sheet.open {
+    top: auto;
     bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+    .bottom-sheet {
+        width: 100%;
+        overflow: visible;
+    }
 }

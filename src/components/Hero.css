@@ -7,3 +7,18 @@
     flex-direction: column;
     padding: 10px 20px;
 }
+
+
+@media screen and (max-width: 768px) {  
+    .Hero{
+        max-height: 500px;
+        padding: 0;
+        gap: 1.7rem;
+    }
+    .Hero img{
+        /* height: 400px; */
+        width: 100%;
+        object-fit: cover;
+        margin-inline: auto;
+    }
+}

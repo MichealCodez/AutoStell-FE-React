@@ -1,10 +1,11 @@
-import cardImage2 from '../images/card-image-2.png';
 
 const CardLeft = ({content, onClickJoin}) => {
+    const imageName = content.imageUrl;
+    const imageUrl = require(`../images/${imageName}`)
     return(
         <div className="card-left">
             <div className="col-1">
-                <img src={cardImage2} alt='' />
+                <img src={imageUrl} alt='' />
             </div>
 
             <div className="col-2">
