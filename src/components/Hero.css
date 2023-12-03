@@ -12,8 +12,11 @@
 @media screen and (max-width: 768px) {  
     .Hero{
         max-height: 500px;
+        margin-block: 2rem;
+        height: fit-content;
+        justify-content: space-around;
         padding: 0;
-        gap: 1.7rem;
+        gap: 2rem;
     }
     .Hero img{
         /* height: 400px; */

@@ -7,27 +7,48 @@ import car3 from '../../images/car-image-3.png';
 import car4 from '../../images/car-image-4.png';
 import car5 from '../../images/car-image-5.png';
 import car6 from '../../images/car-image-6.png';
+import { Carousel } from 'react-responsive-carousel';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+
 
 export default function FooterCard() {
-    const images = [
-        car1, car2, car3, car4, car5, car6
-    ]
-    // const [currentImage, setCurrentImage] = useState(0);
-
-    // useEffect(() => {
-    //     const intervalId = setInterval(() => {
-    //         setCurrentImage((prevImage) => (prevImage + 1) % images.length);
-    //     }, 3000); // Change the interval duration as needed (in milliseconds)
-
-    //     return () => clearInterval(intervalId);
-    // }, [images.length]);
+    // const images = [
+    //     car1, car2, car3, car4, car5, car6
+    // ]
+    
 
     return (
         <div className="footer-card">
             <div className='back-image'>
                 <img src={footerCardImage} alt="footer-card-background" />
                 <div className='footer-slider'>
-                    <img src={images[0]} alt="" />
+                    <Carousel
+                        autoPlay={true}
+                        showIndicators={false}
+                        showStatus={false}
+                        showThumbs={false}
+                        infiniteLoop={true}
+                    >
+                        <div>
+                            <img src={car1} alt="car1" />  
+                        </div>
+                        <div>
+                            <img src={car2} alt="car2" />  
+                        </div>
+                        <div>
+                            <img src={car3} alt="car3" />  
+                        </div>
+                        <div>
+                            <img src={car4} alt="car4" />  
+                        </div>
+                        <div>
+                            <img src={car5} alt="car5" />  
+                        </div>
+                        <div>
+                            <img src={car6} alt="car6" />  
+                        </div>
+                    </Carousel>
+                    
                 </div>
                 {/* <div className="footer-slider" style={{ backgroundImage: `url(${images[currentImage]})` }}></div> */}
 
