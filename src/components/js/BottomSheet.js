@@ -5,7 +5,7 @@ import '../styles/WaitListComponent.css'
 import CustomDropDown from './CustomDropDown';
 
 const BottomSheet = ({isOpen, toggleCloseBottomSheet, toggleBottomSheet}) => {
-  const options = ['Sell Cars', 'Blog about cars', 'Be a Repairer','Get a Repairer','Others'];
+  const options = ['Sell Cars','Buy Cars,', 'Blog about cars', 'Be a Repairer','Get a Repairer','Others'];
   // const defaultOption = options[0];
   return (
     

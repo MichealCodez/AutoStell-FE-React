@@ -19,7 +19,7 @@ const CustomDropDown = ({ options }) => {
     return (
         <div className="custom-select">
             <div className="select-header" onClick={handleToggle}>
-                {selectedOption ? selectedOption : 'What action would you like to take on the app?'}
+                {selectedOption ? selectedOption : 'Choose how you would like to use Autostell'}
                 {isOpen ?
                     <img src={openIcon} alt='opened' style={{
                         width: '20px'
