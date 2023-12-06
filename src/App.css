@@ -53,7 +53,7 @@
 @media screen and (max-width: 768px) {  
   .App .top-text{
     width: 90%;
-    margin-block: 1.4rem;
+    /* margin-block: 1.4rem; */
   }
 
   .App .top-text h2 {
