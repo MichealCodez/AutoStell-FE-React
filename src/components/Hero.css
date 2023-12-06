@@ -20,7 +20,8 @@
     }
     .Hero img{
         /* height: 400px; */
-        width: 100%;
+        width: 90%;
+        max-width: 90%;
         object-fit: cover;
         margin-inline: auto;
     }
