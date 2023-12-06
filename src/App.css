@@ -51,8 +51,12 @@
 
 
 @media screen and (max-width: 768px) {  
+  .page-content{
+    width: 100%;
+  }
   .App .top-text{
     width: 90%;
+    margin-inline: auto;
     /* margin-block: 1.4rem; */
   }
 
