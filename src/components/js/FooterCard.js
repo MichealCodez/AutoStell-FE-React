@@ -1,21 +1,22 @@
 import footerCardImage from '../../images/footer-card-image.png';
-// import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Footer.css'
-import car1 from '../../images/car-image-1.png';
-import car2 from '../../images/car-image-2.png';
-import car3 from '../../images/car-image-3.png';
-import car4 from '../../images/car-image-4.png';
-import car5 from '../../images/car-image-5.png';
-import car6 from '../../images/car-image-6.png';
+import car1 from '../../images/car1.png';
+import car2 from '../../images/car5.png';
+import car3 from '../../images/car3.png';
 import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 
 export default function FooterCard() {
-    // const images = [
-    //     car1, car2, car3, car4, car5, car6
-    // ]
-    
+
+    const [currentIndex, setCurrentIndex] = useState(0);
+    const totalItems = 3; // Update this with the total number of items in your carousel
+
+    const handleCarouselChange = index => {
+        const nextIndex = index === totalItems - 1 ? 0 : index + 1;
+        setCurrentIndex(nextIndex);
+    };
 
     return (
         <div className="footer-card">
@@ -28,17 +29,22 @@ export default function FooterCard() {
                         showStatus={false}
                         showThumbs={false}
                         infiniteLoop={true}
+                        showArrows={false}
+                        interval={2000}
+                        transitionTime={2000}
+                        selectedItem={currentIndex}
+                        handleCarouselChange={handleCarouselChange}
                     >
                         <div>
-                            <img src={car1} alt="car1" />  
+                            <img src={car1} alt="car1" />
                         </div>
                         <div>
-                            <img src={car2} alt="car2" />  
+                            <img src={car2} alt="car2" />
                         </div>
                         <div>
-                            <img src={car3} alt="car3" />  
+                            <img src={car3} alt="car3" />
                         </div>
-                        <div>
+                        {/* <div>
                             <img src={car4} alt="car4" />  
                         </div>
                         <div>
@@ -46,9 +52,9 @@ export default function FooterCard() {
                         </div>
                         <div>
                             <img src={car6} alt="car6" />  
-                        </div>
+                        </div> */}
                     </Carousel>
-                    
+
                 </div>
                 {/* <div className="footer-slider" style={{ backgroundImage: `url(${images[currentImage]})` }}></div> */}
 
