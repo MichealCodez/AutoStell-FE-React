@@ -6,6 +6,7 @@
     align-items: center;
     flex-direction: column;
     padding: 10px 20px;
+    box-sizing: border-box;
 }
 
 
@@ -20,8 +21,6 @@
     }
     .Hero img{
         /* height: 400px; */
-        width: 90%;
-        max-width: 90%;
         object-fit: cover;
         margin-inline: auto;
     }

@@ -11,7 +11,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function FooterCard() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const totalItems = 3;
+    const totalItems = 6;
 
     const handleCarouselChange = index => {
         const nextIndex = index === totalItems - 1 ? 0 : index + 1;
@@ -30,11 +30,20 @@ export default function FooterCard() {
                         showThumbs={false}
                         infiniteLoop={true}
                         showArrows={false}
-                        interval={2000}
-                        transitionTime={2000}
+                        interval={3000}
+                        transitionTime={3000}
                         selectedItem={currentIndex}
                         handleCarouselChange={handleCarouselChange}
                     >
+                        <div>
+                            <img src={car1} alt="car1" />
+                        </div>
+                        <div>
+                            <img src={car2} alt="car2" />
+                        </div>
+                        <div>
+                            <img src={car3} alt="car3" />
+                        </div>
                         <div>
                             <img src={car1} alt="car1" />
                         </div>
