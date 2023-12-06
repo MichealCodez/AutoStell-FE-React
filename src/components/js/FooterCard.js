@@ -1,5 +1,5 @@
 import footerCardImage from '../../images/footer-card-image.png';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import '../styles/Footer.css'
 import car1 from '../../images/car1.png';
 import car2 from '../../images/car5.png';
@@ -11,7 +11,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function FooterCard() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-    const totalItems = 3; // Update this with the total number of items in your carousel
+    const totalItems = 3;
 
     const handleCarouselChange = index => {
         const nextIndex = index === totalItems - 1 ? 0 : index + 1;
