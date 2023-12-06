@@ -2,7 +2,7 @@ import footerCardImage from '../../images/footer-card-image.png';
 import React, { useState } from 'react';
 import '../styles/Footer.css'
 import car1 from '../../images/car1.png';
-import car2 from '../../images/car5.png';
+// import car2 from '../../images/car5.png';
 import car3 from '../../images/car3.png';
 import { Carousel } from 'react-responsive-carousel';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
@@ -38,18 +38,18 @@ export default function FooterCard() {
                         <div>
                             <img src={car1} alt="car1" />
                         </div>
-                        <div>
+                        {/* <div>
                             <img src={car2} alt="car2" />
-                        </div>
+                        </div> */}
                         <div>
                             <img src={car3} alt="car3" />
                         </div>
                         <div>
                             <img src={car1} alt="car1" />
                         </div>
-                        <div>
+                        {/* <div>
                             <img src={car2} alt="car2" />
-                        </div>
+                        </div> */}
                         <div>
                             <img src={car3} alt="car3" />
                         </div>
