@@ -9,6 +9,10 @@
     box-sizing: border-box;
 }
 
+.hero-image-background{
+    width: 100%;
+}
+
 
 @media screen and (max-width: 768px) {  
     .Hero{
@@ -25,4 +29,6 @@
         margin-inline: auto;
         width: 100%;
     }
+
+   
 }

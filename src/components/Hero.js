@@ -6,7 +6,7 @@ export default function Hero ({onClickJoin}) {
     return(
     <div className='Hero'>
         <Header onClickJoin={onClickJoin}/>
-        <div>
+        <div className='hero-image-background'>
             <img src={topBackImage} alt='CAR' />
         </div>
     </div>
