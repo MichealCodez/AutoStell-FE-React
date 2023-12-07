@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CardLeft from './components/CardLeft';
 import CardRight from './components/CardRight';
-import Hero from './components/Hero';
+// import Hero from './components/Hero';
 import contentData from './content.json';
 import './App.css';
 import Footer from './components/js/Footer';
