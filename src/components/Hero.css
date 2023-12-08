@@ -15,8 +15,6 @@
 }
 
 
-
-
 @media screen and (max-width: 768px) {  
     .Hero{
         max-height: 500px;
@@ -27,8 +25,8 @@
         gap: 2rem;
         width: 100%;
     }
+    
     .Hero img{
-        /* height: 400px; */
         object-fit: cover;
         margin-inline: auto;
         width: 100%;
