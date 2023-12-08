@@ -11,7 +11,10 @@
 
 .hero-image-background{
     width: 100%;
+    text-align: center;
 }
+
+
 
 
 @media screen and (max-width: 768px) {  
@@ -30,6 +33,5 @@
         margin-inline: auto;
         width: 100%;
     }
-
    
 }
