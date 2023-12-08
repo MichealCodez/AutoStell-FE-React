@@ -14,14 +14,13 @@
     text-align: center;
 }
 
-.rotating-car {
-    transition: transform 0.5s ease-in-out;
-    /* Add smooth transition for rotation */
+.hero-image-background img{
+    height: 500px;
 }
 
 @media screen and (max-width: 768px) {
     .Hero {
-        max-height: 500px;
+        max-height: fit-content;
         margin-block: 2rem;
         height: fit-content;
         justify-content: space-around;
@@ -33,7 +32,8 @@
     .Hero img {
         object-fit: cover;
         margin-inline: auto;
-        width: 100%;
+        width: 90%;
+        height: fit-content;
     }
 
 }
