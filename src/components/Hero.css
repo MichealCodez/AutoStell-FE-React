@@ -22,6 +22,7 @@
         justify-content: space-around;
         padding: 0;
         gap: 2rem;
+        width: 100%;
     }
     .Hero img{
         /* height: 400px; */
