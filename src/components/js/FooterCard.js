@@ -1,74 +1,87 @@
+import React, { useState, useRef, useEffect } from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
 import footerCardImage from '../../images/footer-card-image.png';
-import React, { useState } from 'react';
-import '../styles/Footer.css'
 import car1 from '../../images/car1.png';
-// import car2 from '../../images/car5.png';
-import car3 from '../../images/car3.png';
-import { Carousel } from 'react-responsive-carousel';
-import "react-responsive-carousel/lib/styles/carousel.min.css";
+import car2 from '../../images/car3.png';
+import car3 from '../../images/car4.png';
+import car4 from '../../images/car5.png';
+import car5 from '../../images/car6.png';
+import car6 from '../../images/car7.png';
+import car7 from '../../images/car8.png';
 
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
+import '../styles/Footer.css';
+
+
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
 export default function FooterCard() {
+  
 
-    const [currentIndex, setCurrentIndex] = useState(0);
-    const totalItems = 6;
+  return (
+    <div className="footer-card">
+      <div className='back-image'>
+        <img src={footerCardImage} alt="footer-card-background" />
+        <div className='slider-back'>
+          <Swiper
+            spaceBetween={30}
+            loop={true}
+            centeredSlides={true}
+            autoplay={{
+              delay: 2500,
+              disableOnInteraction: false,
+            }}
+            pagination={false}
+            navigation={false}
+            modules={[Autoplay, Pagination, Navigation]}
+            className="mySwiper"
+          >
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car1} />
+              </div>
+            </SwiperSlide>
 
-    const handleCarouselChange = index => {
-        const nextIndex = index === totalItems - 1 ? 0 : index + 1;
-        setCurrentIndex(nextIndex);
-    };
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car2} />
+              </div>
+            </SwiperSlide>
 
-    return (
-        <div className="footer-card">
-            <div className='back-image'>
-                <img src={footerCardImage} alt="footer-card-background" />
-                <div className='footer-slider'>
-                    <Carousel
-                        autoPlay={true}
-                        showIndicators={false}
-                        showStatus={false}
-                        showThumbs={false}
-                        infiniteLoop={true}
-                        showArrows={false}
-                        interval={3000}
-                        transitionTime={3000}
-                        selectedItem={currentIndex}
-                        handleCarouselChange={handleCarouselChange}
-                    >
-                        <div>
-                            <img src={car1} alt="car1" />
-                        </div>
-                        {/* <div>
-                            <img src={car2} alt="car2" />
-                        </div> */}
-                        <div>
-                            <img src={car3} alt="car3" />
-                        </div>
-                        <div>
-                            <img src={car1} alt="car1" />
-                        </div>
-                        {/* <div>
-                            <img src={car2} alt="car2" />
-                        </div> */}
-                        <div>
-                            <img src={car3} alt="car3" />
-                        </div>
-                        {/* <div>
-                            <img src={car4} alt="car4" />  
-                        </div>
-                        <div>
-                            <img src={car5} alt="car5" />  
-                        </div>
-                        <div>
-                            <img src={car6} alt="car6" />  
-                        </div> */}
-                    </Carousel>
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car3} />
+              </div>
+            </SwiperSlide>
 
-                </div>
-                {/* <div className="footer-slider" style={{ backgroundImage: `url(${images[currentImage]})` }}></div> */}
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car4} />
+              </div>
+            </SwiperSlide>
 
-            </div>
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car5} />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car6} />
+              </div>
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <div className='image-container'>
+                <img src={car7} />
+              </div>
+            </SwiperSlide>
+          </Swiper>
         </div>
-    );
+      </div>
+    </div >
+  );
 }
-

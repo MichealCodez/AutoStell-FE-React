@@ -1,3 +1,5 @@
+import React from "react";
+
 
 const CardLeft = ({content, onClickJoin}) => {
     const imageName = content.imageUrl;

@@ -32,42 +32,96 @@
 }
 
 
-.footer-card{
+.footer-card {
     width: 70%;
     margin: 40px auto;
+    /* overflow: hidden; */
 }
 
-.footer-card .back-image{
+.footer-card .back-image {
     position: relative;
     width: 100%;
 }
 
-.footer-card img{
+.footer-card img {
     width: 100%;
 }
 
-.footer-card .footer-slider{
+.footer-card .footer-slider {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Set the width to 100% to show only one item at a time */
+    height: 100%;
+}
+
+.footer-card img {
+    width: 100%;
+    transition: transform 1s ease-in-out;
+    /* Add transition for smooth sliding */
+}
+
+.slider-back{
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    width: 90%;
-    height: 90%;
-    margin-inline: auto;
-    margin-top: auto;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide .image-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.swiper-button-prev{
+    display: none;
+}
+
+.swiper-button-next{
+    display: none;
 }
 
 
 
+
 @media screen and (max-width: 768px) {
-    .footer{
+    .footer {
         height: fit-content;
         padding: 1rem 0.4rem 0.7rem;
         align-items: flex-start;
     }
 
-    .footer-card{
+    .footer-card {
         width: 90%;
         margin: 40px auto;
     }
@@ -77,9 +131,8 @@
     }
 
     .footer p:nth-child(2) {
-        /* width: 40%; */
         font-size: 0.5rem;
-    }   
+    }
 }
 
 .f7-link {
