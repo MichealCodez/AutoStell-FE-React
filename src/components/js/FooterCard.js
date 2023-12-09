@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import footerCardImage from '../../images/footer-card-image.png';
 import car1 from '../../images/car1.png';
@@ -40,43 +40,43 @@ export default function FooterCard() {
           >
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car1} />
+                <img src={car1} alt='Swiping cars' />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car2} />
+                <img src={car2} alt='Swiping cars'/>
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car3} />
+                <img src={car3} alt='Swiping cars' />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car4} />
+                <img src={car4} alt='Swiping cars' />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car5} />
+                <img src={car5} alt='Swiping cars' />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car6} />
+                <img src={car6} alt='Swiping cars' />
               </div>
             </SwiperSlide>
 
             <SwiperSlide>
               <div className='image-container'>
-                <img src={car7} />
+                <img src={car7} alt='Swiping cars' />
               </div>
             </SwiperSlide>
           </Swiper>
