@@ -1,4 +1,5 @@
 import '../styles/CenterCard.css'
+import React from 'react';
 
 
 function CenterCard({onClickJoin}) {

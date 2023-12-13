@@ -1,4 +1,4 @@
-.Hero{
+.Hero {
     height: 100vh;
     max-height: 800px;
     display: flex;
@@ -9,15 +9,18 @@
     box-sizing: border-box;
 }
 
-.hero-image-background{
-    width: 100%;
+.hero-image-background {
+    width: fit-content;
     text-align: center;
 }
 
+.hero-image-background img{
+    height: 500px;
+}
 
-@media screen and (max-width: 768px) {  
-    .Hero{
-        max-height: 500px;
+@media screen and (max-width: 768px) {
+    .Hero {
+        max-height: fit-content;
         margin-block: 2rem;
         height: fit-content;
         justify-content: space-around;
@@ -25,11 +28,11 @@
         gap: 2rem;
         width: 100%;
     }
-    
-    .Hero img{
+
+    .Hero img {
         object-fit: cover;
         margin-inline: auto;
-        width: 100%;
+        width: 90%;
+        height: fit-content;
     }
-   
 }

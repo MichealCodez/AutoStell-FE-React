@@ -1,4 +1,5 @@
 import './Card.css';
+import React from 'react';
 
 
 const CardRight = ({content, onClickJoin}) => {
