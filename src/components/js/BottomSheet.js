@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 import closeBtn from '../../images/close.svg';
 import '../styles/BottomSheet.css';
 import '../styles/WaitListComponent.css'
@@ -20,15 +20,6 @@ const BottomSheet = ({isOpen, toggleCloseBottomSheet, toggleBottomSheet}) => {
                 }
             </div>
             <div className='content'>
-                
-                {/* <select>
-                    <option>What action would you like to take on the app?</option>
-                    <option>Sell Cars</option>
-                    <option>Sell Cars</option>
-                    <option>Sell Cars</option>
-                    <option>Sell Cars</option>
-                    <option>Sell Cars</option>
-                </select> */}
                 <CustomDropDown options={options} />
                 <label>Email Address:
                 </label>
