@@ -1,4 +1,6 @@
 import React from "react";
+import './Card.css';
+import arrow from '../images/arrow2.svg'
 
 
 const CardLeft = ({content, onClickJoin}) => {
@@ -13,7 +15,10 @@ const CardLeft = ({content, onClickJoin}) => {
             <div className="col-2">
                 <p className='title'>{content.title} </p>
                 <p>{content.text}</p>
-                <button onClick={onClickJoin}>Join Waitlist</button>
+                <button onClick={onClickJoin}>
+                    Join Waitlist
+                    <img src={arrow} alt='arrow' />
+                    </button>
             </div>
 
         </div>

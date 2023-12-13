@@ -47,10 +47,10 @@
 }
 
 .card-right .col-1 button {
+    color: #001F3F;
     cursor: pointer;
     margin-top: 20px;
     width: 250px;
-    color: #A9A9A9;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
@@ -58,16 +58,21 @@
     line-height: normal;
     padding: 15px 30px;
     text-transform: capitalize;
-    border-radius: 60px;
-    border: 2px solid #FFA500;
-    background: #001F3F;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    background: transparent;
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
     backdrop-filter: blur(15px);
     transition: all 0.4s ease-in;
 }
 
 .card-right .col-1 button:hover {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    /* border: 2px solid #FFA500; */
+    /* border-radius: 60px; */
 }
 
 
@@ -129,28 +134,35 @@
     text-transform: capitalize;
 }
 
+
 .card-left .col-2 button {
     margin-top: 30px;
     width: 250px;
     padding: 15px 30px;
-    color: #001F3F;
+    color: #A9A9A9;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
     text-transform: capitalize;
-    border-radius: 90px;
-    border: 2px solid #FFA500;
-    background: #A9A9A9;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    border: none;
+    /* border-radius: 90px; */
+    /* border: 2px solid #FFA500; */
+    background: none;
     cursor: pointer;
-    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    /* box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25); */
     backdrop-filter: blur(15px);
     transition: all 0.4s ease-in;
 }
 
 .card-left .col-2 button:hover {
-    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4); 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 1);
+    /* box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4); */
     /* box-shadow: 0px 10px 20px 0px rgba(255, 255, 255, 0.2); */
 }
 
@@ -205,7 +217,7 @@
         padding: 1rem 1.2rem;
     }
 
-    .card-right .col-2 img{
+    .card-right .col-2 img {
         box-shadow: none;
         max-height: 350px;
     }
