@@ -29,7 +29,11 @@
         width: 100%;
     }
 
-    .Hero img {
+    .hero-image-background{
+        width: 100%;
+    }
+
+    .hero-image-background img {
         object-fit: cover;
         margin-inline: auto;
         width: 90%;

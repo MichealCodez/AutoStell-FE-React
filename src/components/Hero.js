@@ -16,7 +16,7 @@ export default function Hero({ onClickJoin }) {
                     return prevAngle + 1;
                 }
             });
-        }, 50);
+        }, 100);
         return () => clearInterval(intervalId);
     }, []);
 
