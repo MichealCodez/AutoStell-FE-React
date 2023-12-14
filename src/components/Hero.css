@@ -59,7 +59,7 @@
 
     .hero-image-background .static-image {
         object-fit: cover;
-        /* margin-inline: auto; */
+        margin-inline: auto;
         width: 100%;
         /* height: fit-content; */
         height: auto;
