@@ -44,6 +44,11 @@
         width: 100%;
     }
 
+    .hero-image-background>div{
+        width: 100%;
+        height: fit-content;
+    }
+
     .hero-image-background .static-image {
         object-fit: cover;
         margin-inline: auto;
