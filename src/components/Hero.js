@@ -4,30 +4,30 @@ import "./Hero.css";
 import topBackImage from "../images/footer-card-image.png";
 
 export default function Hero({ onClickJoin }) {
-  const [rotationAngle, setRotationAngle] = useState(1);
-  const [images, setImages] = useState([]);
+  // const [rotationAngle, setRotationAngle] = useState(1);
+  // const [images, setImages] = useState([]);
 
-  useEffect(() => {
-    const preloadImages = async () => {
-      const imageArray = Array.from({ length: 72 }, (_, index) => {
-        const img = new Image();
-        img.src = require(`../images/rotating-cars/${index + 1}.png`);
-        return img;
-      });
-      await Promise.all(imageArray.map((img) => img.decode()));
-      setImages(imageArray);
-    };
+  // useEffect(() => {
+  //   const preloadImages = async () => {
+  //     const imageArray = Array.from({ length: 72 }, (_, index) => {
+  //       const img = new Image();
+  //       img.src = require(`../images/rotating-cars/${index + 1}.png`);
+  //       return img;
+  //     });
+  //     await Promise.all(imageArray.map((img) => img.decode()));
+  //     setImages(imageArray);
+  //   };
 
-    preloadImages();
-  }, []);
+  //   preloadImages();
+  // }, []);
 
-  useEffect(() => {
-    const intervalId = setInterval(() => {
-      setRotationAngle((prevAngle) => (prevAngle === 72 ? 1 : prevAngle + 1));
-    }, 100);
+  // useEffect(() => {
+  //   const intervalId = setInterval(() => {
+  //     setRotationAngle((prevAngle) => (prevAngle === 72 ? 1 : prevAngle + 1));
+  //   }, 100);
 
-    return () => clearInterval(intervalId);
-  }, []);
+  //   return () => clearInterval(intervalId);
+  // }, []);
 
   return (
     <div className="Hero">
