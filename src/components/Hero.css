@@ -52,6 +52,8 @@
     }
 
     .hero-image-background .rotating-car{
+        object-fit: cover;
+        margin-inline: auto;
         width: 100%;
         height: fit-content;
     }
