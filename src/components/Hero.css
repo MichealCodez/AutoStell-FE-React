@@ -51,12 +51,6 @@
         margin-inline: auto;
     }
 
-    /* .hero-image-background>div{
-        width: 90%;
-        height: fit-content; 
-        margin-inline: auto;
-    } */
-
     .hero-image-background .static-image {
         object-fit: cover;
         margin-inline: auto;
