@@ -48,7 +48,8 @@ function App() {
               if (index % 2 === 0) {
                 return <CardRight key={index} content={item} onClickJoin={toggleOpenBottomSheet} />
               } else {
-                return <CardLeft key={index} content={item} onClickJoin={toggleOpenBottomSheet} />
+                return <CardLeft key={index} content={item} 
+                onClickJoin={toggleOpenBottomSheet} />
               }
             })}
 

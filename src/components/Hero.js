@@ -34,14 +34,12 @@ export default function Hero({ onClickJoin }) {
     <div className="Hero">
       <Header onClickJoin={onClickJoin} />
       <div className="hero-image-background">
-        <div>
           <img src={topBackImage} alt="backImage" className="static-image" />
           {/* <img
             src={images.length ? images[rotationAngle - 1].src : ""}
             alt="Rotating Car"
             className="rotating-car"
           /> */}
-        </div>
       </div>
     </div>
   );
