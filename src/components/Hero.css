@@ -14,6 +14,10 @@
     text-align: center;
 }
 
+.hero-image-background>div{
+    position: relative;
+}
+
 .hero-image-background .static-image{
     height: 500px;
 }
@@ -34,7 +38,7 @@
         max-height: fit-content;
         margin-block: 2rem;
         height: fit-content;
-        justify-content: space-around;
+        /* justify-content: space-around; */
         padding: 0;
         gap: 2rem;
         width: 100%;
@@ -45,14 +49,15 @@
     }
 
     .hero-image-background>div{
-        width: 100%;
+        width: 90%;
         height: fit-content;
+        margin: auto;
     }
 
     .hero-image-background .static-image {
         object-fit: cover;
         margin-inline: auto;
-        width: 90%;
+        width: 100%;
         height: fit-content;
     }
 
@@ -60,6 +65,6 @@
         object-fit: cover;
         margin-inline: auto;
         width: 100%;
-        height: fit-content;
+        /* height: 100%; */
     }
 }
