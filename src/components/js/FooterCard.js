@@ -7,7 +7,7 @@ import car3 from '../../images/car4.png';
 import car4 from '../../images/car5.png';
 import car5 from '../../images/car6.png';
 import car6 from '../../images/car7.png';
-import car7 from '../../images/car8.png';
+// import car7 from '../../images/car8.png';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -74,11 +74,11 @@ export default function FooterCard() {
               </div>
             </SwiperSlide>
 
-            <SwiperSlide>
+            {/* <SwiperSlide>
               <div className='image-container'>
                 <img src={car7} alt='Swiping cars' />
               </div>
-            </SwiperSlide>
+            </SwiperSlide> */}
           </Swiper>
         </div>
       </div>
