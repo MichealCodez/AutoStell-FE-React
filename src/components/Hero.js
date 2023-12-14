@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+// import React, { useState, useEffect } from "react";
+import React from "react";
 import Header from "./Header";
 import "./Hero.css";
 import topBackImage from "../images/footer-card-image.png";
