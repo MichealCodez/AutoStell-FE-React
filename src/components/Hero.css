@@ -69,6 +69,7 @@
         object-fit: cover;
         margin-inline: auto;
         width: 100%;
+        height: auto;
         /* height: 100%; */
     }
 }
