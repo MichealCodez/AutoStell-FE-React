@@ -35,7 +35,7 @@ function App() {
             <p>Being a car enthusiast can be challenging at times, with difficulties in fixing automobile issues and selling cars. Autostell recognizes these issues and aims to provide a unified platform to address them. Think of it as a Stack Overflow for mechanics and a seamless marketplace for buying and selling cars. Autostell is committed to offering general solutions for various automobile problems.</p>
           </div>
           <div className='card-container'>
-            {contentData.map((item, index) => {
+            {/* {contentData.map((item, index) => {
               if (index === 4) {
                 return (
                   <>
@@ -51,7 +51,7 @@ function App() {
                 return <CardLeft key={index} content={item} 
                 onClickJoin={toggleOpenBottomSheet} />
               }
-            })}
+            })} */}
 
           </div>
         </div>

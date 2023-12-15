@@ -75,5 +75,10 @@
     margin-bottom: 1rem;
     text-align: justify;
   }
+
+  .card-container{
+    background-color: red;
+    height: 200px;
+  }
   
 }
