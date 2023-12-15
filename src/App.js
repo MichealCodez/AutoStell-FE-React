@@ -30,10 +30,10 @@ function App() {
       <div className='container'>
         <Hero onClickJoin={toggleOpenBottomSheet} />
         <div className='page-content'>
-          {/* <div className='top-text'>
+          <div className='top-text'>
             <h2>Why Autostell?</h2>
             <p>Being a car enthusiast can be challenging at times, with difficulties in fixing automobile issues and selling cars. Autostell recognizes these issues and aims to provide a unified platform to address them. Think of it as a Stack Overflow for mechanics and a seamless marketplace for buying and selling cars. Autostell is committed to offering general solutions for various automobile problems.</p>
-          </div> */}
+          </div>
           <div className='card-container'>
             {contentData.map((item, index) => {
               if (index === 4) {
