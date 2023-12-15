@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import CardLeft from './components/CardLeft';
-import CardRight from './components/CardRight';
+// import CardLeft from './components/CardLeft';
+// import CardRight from './components/CardRight';
 import Hero from './components/Hero';
-import contentData from './content.json';
+// import contentData from './content.json';
 import './App.css';
 import Footer from './components/js/Footer';
 import FooterCard from './components/js/FooterCard';
-import CenterCard from './components/js/CenterCard';
+// import CenterCard from './components/js/CenterCard';
 import BottomSheet from './components/js/BottomSheet'
 
 function App() {
