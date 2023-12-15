@@ -41,7 +41,7 @@
 
 .page-content{
   width: 100%;
-  margin-inline: auto;
+  margin: 0 auto;
 }
 
 .card-container{
@@ -61,8 +61,7 @@
   }
   .App .top-text{
     width: 90%;
-    margin-inline: auto;
-    /* margin-block: 1.4rem; */
+    margin: 40px auto;
   }
 
   .App .top-text h2 {
