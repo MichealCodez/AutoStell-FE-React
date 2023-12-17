@@ -50,13 +50,13 @@
     color: #001F3F;
     cursor: pointer;
     margin-top: 20px;
-    width: 250px;
+    width: 200px;
     font-family: Roboto;
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
-    padding: 15px 30px;
+    padding: 15px 5px;
     text-transform: capitalize;
     display: flex;
     justify-content: space-around;
@@ -75,9 +75,6 @@
     /* border-radius: 60px; */
 }
 
-
-
-
 .card-right p.title {
     color: #001F3F;
     font-family: Montserrat;
@@ -88,8 +85,6 @@
     text-transform: capitalize;
     margin-bottom: 10px;
 }
-
-
 
 
 .card-left .col-1 {
@@ -137,8 +132,8 @@
 
 .card-left .col-2 button {
     margin-top: 30px;
-    width: 250px;
-    padding: 15px 30px;
+    width: 200px;
+    padding: 15px 5px;
     color: #A9A9A9;
     font-family: Roboto;
     font-size: 20px;
@@ -206,8 +201,6 @@
         font-size: 1.4rem;
         text-align: center;
     }
-
-
 
     .card-right .col-1 button,
     .card-left .col-2 button {
