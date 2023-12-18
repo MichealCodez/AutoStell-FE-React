@@ -3,7 +3,7 @@ import '../styles/CustomDropDown.css';
 import openIcon from '../../images/upload.png';
 import closedIcon from '../../images/down.png';
 
-const CustomDropDown = ({ options }) => {
+const CustomDropDown = ({ options, onChangeRole }) => {
     const [selectedOption, setSelectedOption] = useState(null);
     const [isOpen, setIsOpen] = useState(false);
 
@@ -14,6 +14,7 @@ const CustomDropDown = ({ options }) => {
     const handleOptionClick = (option) => {
         setSelectedOption(option);
         setIsOpen(false);
+        onChangeRole(option);
     };
 
     return (
