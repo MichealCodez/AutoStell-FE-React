@@ -12,19 +12,24 @@ const BottomSheet = ({ isOpen, toggleCloseBottomSheet, toggleBottomSheet }) => {
   const apiUrl = 'https://f7team.vercel.app/api/autostells/';
   const [sending, setSending] = useState(false);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const response = await fetch(apiUrl);
-        const jsonData = await response.json();
-        setData(jsonData);
-      } catch (error) {
-        console.error('Error during GET request:', error);
-      }
-    };
+  const initiateDataFetch = () => {
+    useEffect(() => {
+      const fetchData = async () => {
+        try {
+          const response = await fetch(apiUrl);
+          const jsonData = await response.json();
+          setData(jsonData);
+        } catch (error) {
+          console.error('Error during GET request:', error);
+        }
+      };
 
-    fetchData();
-  }, []);
+      fetchData();
+    }, []);
+  }
+
+  initiateDataFetch();
+
 
   const handleJoinWaitlist = async () => {
     setSending(true)
@@ -44,7 +49,6 @@ const BottomSheet = ({ isOpen, toggleCloseBottomSheet, toggleBottomSheet }) => {
       });
 
       console.log(response);
-      setEmail('');
 
     } catch (error) {
       console.error('Error during POST request:', error);
@@ -65,11 +69,11 @@ const BottomSheet = ({ isOpen, toggleCloseBottomSheet, toggleBottomSheet }) => {
           }
         </div>
         <div className='content'>
-          <CustomDropDown options={roles} onChangeRole={(role) => setRole(role)} />
+          <CustomDropDown options={roles} onChangeRole={(role) => setRole(role)}/>
           <label>Email Address:
           </label>
-          <input type='email' onChange={(e) => setEmail(e.target.value)} />
-          <button onClick={handleJoinWaitlist} disabled={sending}>{sending ? 'Sending' :'Join Waitlist'}</button>
+          <input type='email' value={email} onChange={(e) => setEmail(e.target.value)} disabled={sending}/>
+          <button onClick={handleJoinWaitlist} disabled={sending}>{sending ? 'Sending' : 'Join Waitlist'}</button>
         </div>
       </div>
     </div>
