@@ -40,7 +40,12 @@
 }
 
 .page-content{
-  margin-inline: auto;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-container{
+  width: 100%;
 }
 
 
@@ -56,8 +61,7 @@
   }
   .App .top-text{
     width: 90%;
-    margin-inline: auto;
-    /* margin-block: 1.4rem; */
+    margin: 40px auto;
   }
 
   .App .top-text h2 {
@@ -70,4 +74,10 @@
     margin-bottom: 1rem;
     text-align: justify;
   }
+
+  .card-container{
+    /* background-color: red; */
+    /* height: 200px; */
+  }
+  
 }
